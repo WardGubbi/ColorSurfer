@@ -1,0 +1,18 @@
+<template name="game">
+    <div class="row-fluid index-row">
+        <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 padding0">
+            {{> canvas}}
+        </div>
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 content-row padding0">
+            <div></div>
+            <div id="menu">
+                {{> menu}}
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="canvas">
+    <div id="canvas" style="border: 2px solid #3A589A; border-radius: 4px;">
+    </div>
+</template>

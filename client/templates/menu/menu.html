@@ -1,0 +1,28 @@
+<template name="menu">
+    <div class="menu">
+	    <div class="buttons">
+		    {{#if currentUser}}
+			    <button class=" btn btn-default clear">Clear</button>
+		    {{/if}}
+		    <button class="btn btn-default rankings">Rankings</button>
+	    </div>
+	    <div class="info">
+		    <div class="floatLeft">Players joined: {{game.playerCount}}</div>
+		    {{#if currentPlayer}}{{#unless isStarted}}
+			    <span class="separator floatLeft">&nbsp;|&nbsp;</span>
+			    <div class="floatLeft">Hi {{currentPlayer.name}}! You are <span
+				    class="{{currentPlayer.color}}">player {{currentPlayer.number}}</span>.
+			    </div>
+		    {{/unless}}{{/if}}
+		    {{#if isStarted}}
+			    <div class="floatLeft">{{game.time}}&nbsp;seconds left!</div>
+		    {{/if}}
+		    {{#if gameFull}}
+			    <div class="floatLeft">Game full!</div>
+		    {{/if}}
+	    </div>
+	    <div class="row">
+		    {{> leaderboard}}
+	    </div>
+    </div>
+</template>

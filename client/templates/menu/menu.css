@@ -1,0 +1,37 @@
+#menu {
+	height: 100%;
+	color: #fff;
+}
+
+.buttons {
+	position: absolute;
+	bottom: 10%;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.info{
+    height: 1.5rem;
+}
+
+.buttons {
+    height: 1.5rem;
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: dodgerblue;
+}
+
+.green {
+    color: green;
+}
+
+.yellow {
+    color: gold;
+}

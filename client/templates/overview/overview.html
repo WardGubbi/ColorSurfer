@@ -1,0 +1,22 @@
+<template name="overview">
+    <div class="overview-container">
+        <div class="row-fluid overview">
+
+            <div class="row">
+                <div class="overview-buttons">
+                    {{#if currentUser}}
+                        <button class="btn btn-primary join">Join</button>
+                        <button class=" btn btn-primary start">Start</button>
+                    {{/if}}
+                </div>
+
+
+                <div class="joined-users">
+                    {{#each joinedUsers}}
+                        <div class="user">{{emails.[0].address}}</div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

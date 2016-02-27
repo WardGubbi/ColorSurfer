@@ -1,0 +1,34 @@
+<head>
+    <title>colorblocks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,  user-scalable=no">
+</head>
+
+<body>
+    {{renderPage}}
+</body>
+
+<template name="layout">
+    <nav class="navbar" role="navigation" ng-class="{overlaynavbar: index.isCollapsed === true }">
+
+        <div class="flexcontainer">
+            <!-- logo and collapsed hamburger menu -->
+            <div class="box1">
+                <a class="navbar-brand page-scroll">
+                    <img id="logo" src="images/logo.svg" alt="23 SECONDS"/>
+                </a>
+            </div>
+
+            <!-- Collect the nav links for toggling -->
+            <div id="box2-id" class="box2">
+                <div id="navbar" class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <span>Welcome to the 23:Seconds game!</span>
+                </div>
+            </div>
+        </div>
+        <!-- /.flexcontainer -->
+    </nav>
+    <div class="container index-container">
+        {{> yield}}
+    </div>
+</template>
+

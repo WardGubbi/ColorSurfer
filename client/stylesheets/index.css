@@ -1,0 +1,84 @@
+body {
+	background: url('/images/background.jpg');
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+.overview-container {
+	height: 80vh;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.overview {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.padding0 {
+	padding: 0 !important;
+}
+
+.index-container {
+	margin-top: 3vh;
+	height: 90vh;
+}
+
+.index-row {
+	height: 100%;
+}
+
+.content-row {
+	height: 602px;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.navbar {
+	background-color: #091534;
+	height: 9vh;
+	margin-bottom: 0;
+	padding: 0 7vw;
+	text-transform: uppercase;
+	border-radius: 0 !important;
+}
+
+.navbar .flexcontainer {
+	height: 100%;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	-webkit-align-items: center;
+	align-items: flex-start;
+}
+
+
+.navbar .flexcontainer .box1 .navbar-brand {
+	margin-top: 3vh;
+	padding: 0;
+	height: 2.5vh;
+	float: left;
+}
+
+#logo {
+	margin: 0;
+	height: 100%;
+}
+
+.navbar-brand:focus {
+	outline: 0;
+}
+
+#navbar {
+	margin-top: 3vh;
+}
+
+#navbar span {
+	color: white !important;
+}
+
+canvas {
+	width: 100% !important;
+}

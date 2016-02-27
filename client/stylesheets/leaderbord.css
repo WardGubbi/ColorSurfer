@@ -1,0 +1,14 @@
+#leaderboard {
+    padding: 10px;
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.playerTag {
+    border: 2px solid black;
+    color: white;
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5%;
+}
